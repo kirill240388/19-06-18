@@ -36,7 +36,7 @@ int main()
 		int n = 3,guess,usernumber,popytka;
 		srand(time(NULL));
 		
-		for (int i = 1; i < n; i++)
+		for (int i = 1; i <= n; i++)
 		{
 			guess = 1 + rand() % 4;
 			cout << "popytka " << i << endl;
