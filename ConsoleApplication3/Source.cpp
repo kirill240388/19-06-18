@@ -142,6 +142,25 @@ int main()
 				break;
 		}
 	}
+		if (task == 7)
+		{
+			int number;
+			cin >> number;
+			int i = 0;
+			while (true)
+			{
+				int a = 1 + rand() % 100;
+				if (a == number)
+				{
+					cout << "computer ugadal s " << i << " popytki"<<endl;
+					break;
+				}
+				i++;
+				
+			}
+			
+
+		}
 	
 	
 		
