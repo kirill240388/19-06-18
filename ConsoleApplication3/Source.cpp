@@ -38,7 +38,7 @@ int main()
 		
 		for (int i = 1; i <= n; i++)
 		{
-			guess = 1 + rand() % 4;
+			guess = 1+ rand() % 5;
 			cout << "popytka " << i << endl;
 			cout << "Vvedite chislo " << endl;
 				cin >> usernumber;
