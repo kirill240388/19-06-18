@@ -6,9 +6,11 @@
 using namespace std;
 int main()
 
+
 {
-	srand(time(NULL));
+	
 	setlocale(LC_ALL, "Rus");
+	srand(time(NULL));
 	int task,popytka;
 	cin >> task;
 	if (task == 1)
@@ -31,34 +33,27 @@ int main()
 	}
 	if (task == 2)
 	{
-		int n = 10,guess,usernumber,popytka;
-		guess =1 + rand() % 4;
-		for (int i = 0; i < n; i++)
+		int n = 3,guess,usernumber,popytka;
+		srand(time(NULL));
+		
+		for (int i = 1; i < n; i++)
 		{
-			
-			cout << "popytka " << i+1 << endl;
+			guess = 1 + rand() % 4;
+			cout << "popytka " << i << endl;
 			cout << "Vvedite chislo " << endl;
-							cin >> usernumber;
+				cin >> usernumber;
 				if (usernumber != guess)
 				{
+					
 					cout << "Ne ugadali " << endl;
 					cout << "zagadannoe chislo bylo " << guess << endl;
-					cout << "Ostalos " << n - i-1 << " popytok" << endl;
+					cout << "Ostalos " << n-i << " popytok" << endl;
 					continue;
-					
-
 				}
 				
-						
-				else
-				{
-					cout << "Vy ugadali " <<"s "<<i+1<<" popytok"<<  endl;
-					break;
-					
-			    }
-				
-				
-				
+				cout << "Vy ugadali " << "s " << i << " popytok" << endl;
+				break;
+							
 		}
 	}
 	
